@@ -2,7 +2,8 @@
 
 ## Project Overview
 
-**👨🏻‍💻 Hi everyone, this is a from a test that I did for a company. The idea is to create a web application that allows the user to search for a user on Github and see the repositories of that user.**
+**👨🏻‍💻 Hi everyone,
+The idea is to create a web application that allows the user to search for a user on Github and see the repositories of that user.**
 
 ### Main Technologies
 
