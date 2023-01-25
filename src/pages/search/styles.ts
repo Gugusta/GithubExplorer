@@ -1,16 +1,15 @@
 import styled from "styled-components"
 
-export const ControlButton = styled.a`
+export const ControlButton = styled.button`
   background: #0079ff;
   border: none;
-  height: 100%;
   border-radius: 1rem;
   line-height: 2.1rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
-  width: 8.4rem;
+  width: 9rem;
   transition: all 0.3s ease-out;
 
   display: flex;
@@ -31,10 +30,10 @@ export const ControlButton = styled.a`
 export const PaginationContainer = styled.section`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 
-  padding-top: 1rem;
+  padding-top: 2rem;
 `
 export const PageList = styled.ul`
   display: flex;
@@ -52,5 +51,6 @@ export const PageItem = styled.li`
   font-size: 1.6rem;
   line-height: 1.9rem;
   letter-spacing: 0.25rem;
-  color: ${(props) => props.theme.colors.themeBtn};
+  padding: 0 3.7rem;
+  color: ${(props) => props.theme.colors.textNorm};
 `

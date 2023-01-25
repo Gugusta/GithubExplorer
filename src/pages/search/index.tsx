@@ -17,13 +17,8 @@ export function SearchPage() {
   const [repository, setRepository] = useState([{}])
   const location = useLocation()
   const [currentPage, setCurrentPage] = useState(1)
-  const [repositoryPerPage] = useState(5)
-
-  useEffect(() => {
-    setUser(location.state.userData.user)
-    setRepository(location.state.userData.dataRepository)
-  }, [user, repository])
-
+  const [repositoryPerPage] = useState(8)
+  const pageNumbers = []
   const indexOfLastRepository = currentPage * repositoryPerPage
   const indexOfFirstRepository = indexOfLastRepository - repositoryPerPage
   const currentRepository = repository.slice(
@@ -31,7 +26,10 @@ export function SearchPage() {
     indexOfLastRepository
   )
 
-  const pageNumbers = []
+  useEffect(() => {
+    setUser(location.state.userData.user)
+    setRepository(location.state.userData.dataRepository)
+  }, [user, repository])
 
   for (let i = 1; i <= Math.ceil(repository.length / repositoryPerPage); i++) {
     pageNumbers.push(i)
@@ -44,8 +42,6 @@ export function SearchPage() {
   function PreviousPage() {
     setCurrentPage(currentPage - 1)
   }
-
-  console.log("currentRepository", currentRepository)
 
   return (
     <Container>

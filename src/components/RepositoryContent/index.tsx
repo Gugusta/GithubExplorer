@@ -1,22 +1,28 @@
 import { RepositoryProps } from "../../types"
-import { Container } from "./styles"
+import {
+  Container,
+  Title,
+  Description,
+  RepositoryListContainer,
+  RepositoryListItem,
+} from "./styles"
 
 export function RepositoryContent({ currentRepository }) {
   return (
     <Container>
-      <ul>
+      <RepositoryListContainer>
         {currentRepository &&
           currentRepository.map(
             ({ id, name, description }: RepositoryProps) => {
               return (
-                <li key={id}>
-                  <h1>{name}</h1>
-                  <div>{description}</div>
-                </li>
+                <RepositoryListItem key={id}>
+                  <Title>{name}</Title>
+                  <Description>{description}</Description>
+                </RepositoryListItem>
               )
             }
           )}
-      </ul>
+      </RepositoryListContainer>
     </Container>
   )
 }

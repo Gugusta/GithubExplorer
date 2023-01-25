@@ -72,18 +72,9 @@ export const SearchInput = ({ setUser }: TopAreaProps) => {
       dataRepository,
     }
 
-    console.log(userData)
-
     setUser(user)
     navigate("/SearchPage", { state: { userData } })
-
-    // fetchRepositories(username)
   }
-
-  // async function fetchRepositories(username: string) {
-
-  //   // navigate("/SearchPage", { state: { repositories } })
-  // }
 
   return (
     <Container>
