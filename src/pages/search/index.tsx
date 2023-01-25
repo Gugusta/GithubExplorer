@@ -6,12 +6,6 @@ import { Index } from "../../components/UserData/Index"
 import { useLocation } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import { RepositoryContent } from "../../components/RepositoryContent"
-import {
-  ControlButton,
-  PaginationContainer,
-  PageList,
-  PageItem,
-} from "./styles"
 import { Pagination } from "../../components/Pagination"
 export function SearchPage() {
   const [user, setUser] = useState<UserProps | null>(null)

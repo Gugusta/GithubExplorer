@@ -12,16 +12,14 @@ export function RepositoryContent({ currentRepository }) {
     <Container>
       <RepositoryListContainer>
         {currentRepository &&
-          currentRepository.map(
-            ({ id, name, description }: RepositoryProps) => {
-              return (
-                <RepositoryListItem key={id}>
-                  <Title>{name}</Title>
-                  <Description>{description}</Description>
-                </RepositoryListItem>
-              )
-            }
-          )}
+          currentRepository.map(({ name, description }: RepositoryProps) => {
+            return (
+              <RepositoryListItem key={name}>
+                <Title>{name}</Title>
+                <Description>{description}</Description>
+              </RepositoryListItem>
+            )
+          })}
       </RepositoryListContainer>
     </Container>
   )
