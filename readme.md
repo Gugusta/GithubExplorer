@@ -35,7 +35,7 @@ VITE v4.0.4  ready in 287 ms
   ➜  press h to show help
 ```
 
-**🌗The Project has Light and Dark Theme.**
+** 🌗The Project has Light and Dark Theme.**
 
 <img alt="Mockup" src="./assets/GitExplorerMockUp03.png">
 <img alt="Mockup" src="./assets/GitExplorerMockUp04.png">
