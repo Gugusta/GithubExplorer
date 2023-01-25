@@ -2,8 +2,8 @@
     Github Explorer
 </h1>
 
-<img alt="Mockup" src="./assets/GitExplorerMockUp01.png">
 <img alt="Mockup" src="./assets/GitExplorerMockUp02.png">
+<img alt="Mockup" src="./assets/GitExplorerMockUp01.png">
 
 ## 👨🏻‍💻 Hi everyone, this is a from a test that I did for a company. The idea is to create a web application that allows the user to search for a user on Github and see the repositories of that user.
 
