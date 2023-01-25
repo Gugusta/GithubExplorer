@@ -7,7 +7,7 @@
 
 ## 👨🏻‍💻 Hi everyone, this is a from a test that I did for a company. The idea is to create a web application that allows the user to search for a user on Github and see the repositories of that user.
 
-To make this project mo<img alt="Mockup" src="./assets/GitExplorerMockUp01.png">re organized, I use ReactJS and Vite to create the project. I also use the Styled Components to create the styles of the project. To make the routes, I use the React Router Dom library.
+To make this project more organized, I use ReactJS and Vite to create the project. I also use the Styled Components to create the styles of the project. To make the routes, I use the React Router Dom library.
 
 ## 👨🏻‍💻 To run this project you need to have NodeJS and Yarn installed on your machine.
 
