@@ -24,7 +24,7 @@ To make this project more organized, I use ReactJS and Vite to create the projec
 ~ yarn dev
 ```
 
-### **👨🏻‍💻 To run this project the following message will be showed on your terminal**
+### **👨🏻‍💻 After running this project the following message will be showed on your terminal**
 
 ```jsx
 VITE v4.0.4  ready in 287 ms
