@@ -12,6 +12,7 @@ import {
   PageList,
   PageItem,
 } from "./styles"
+import { Pagination } from "../../components/Pagination"
 export function SearchPage() {
   const [user, setUser] = useState<UserProps | null>(null)
   const [repository, setRepository] = useState([{}])
@@ -36,10 +37,13 @@ export function SearchPage() {
   }
 
   function NextPage() {
+    if (currentPage === pageNumbers.length) return
+
     setCurrentPage(currentPage + 1)
   }
 
   function PreviousPage() {
+    if (currentPage === 1) return
     setCurrentPage(currentPage - 1)
   }
 
@@ -50,19 +54,11 @@ export function SearchPage() {
         <RepositoryContent currentRepository={currentRepository} />
       )}
 
-      <PaginationContainer>
-        <ControlButton onClick={PreviousPage}>Previous</ControlButton>
-        <PageList>
-          {pageNumbers.map((number) => (
-            <PageItem key={number} className="page-item">
-              {number}
-            </PageItem>
-          ))}
-        </PageList>
-
-        <ControlButton onClick={NextPage}>Next</ControlButton>
-      </PaginationContainer>
-
+      <Pagination
+        pageNumbers={pageNumbers}
+        NextPage={NextPage}
+        PreviousPage={PreviousPage}
+      />
       <NavLink to="/">
         <HomeButton>Home</HomeButton>
       </NavLink>
