@@ -16,7 +16,7 @@ To make this project more organized, I use ReactJS and Vite to create the projec
 
 ## **👨🏻‍💻 To run this project**
 
-### **👨🏻‍💻 You need to have NodeJS and Yarn installed on your machine.**
+### **🖥️ You need to have NodeJS and Yarn installed on your machine.**
 
 ```jsx
 ~ git clone https://github.com/Gugusta/GithubExplorer.git
@@ -25,7 +25,7 @@ To make this project more organized, I use ReactJS and Vite to create the projec
 ~ yarn dev
 ```
 
-### **👨🏻‍💻 After running this project the following message will be showed on your terminal**
+### **💻 After running this project the following message will be showed on your terminal**
 
 ```jsx
 VITE v4.0.4  ready in 287 ms
@@ -35,7 +35,7 @@ VITE v4.0.4  ready in 287 ms
   ➜  press h to show help
 ```
 
-** 🌗The Project has Light and Dark Theme.**
+**🌗 The Project has Light and Dark Theme.**
 
 <img alt="Mockup" src="./assets/GitExplorerMockUp03.png">
 <img alt="Mockup" src="./assets/GitExplorerMockUp04.png">
